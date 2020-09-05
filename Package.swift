@@ -18,8 +18,8 @@ let package = Package(
         .package(url: "https://github.com/Alamofire/Alamofire.git", .exact("5.0.0-rc.1")),
         .package(url: "https://github.com/ReactiveCocoa/ReactiveSwift.git", from: ("6.0.0")),
         .package(url: "https://github.com/ReactiveX/RxSwift.git", .branch("5.1.0-spm-dynamic")),
-        .package(url: "https://github.com/Quick/Quick.git", from: "2.0.0"),
-        .package(url: "https://github.com/Quick/Nimble.git", from: "8.0.0"),
+        .package(url: "https://github.com/Quick/Quick.git", from: "1.1.0"),
+        .package(url: "https://github.com/Quick/Nimble.git", from: "7.0.1"),
 //        .package(url: "https://github.com/AliSoftware/OHHTTPStubs.git", .branch("feature/spm-support")),
     ],
     targets: [
