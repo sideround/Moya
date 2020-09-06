@@ -10,12 +10,12 @@ let package = Package(
         .watchOS(.v3)
     ],
     products: [
-        .library(name: "Moya", targets: ["Moya"]),
+        .library(name: "Moya", type: .dynamic, targets: ["Moya"]),
         .library(name: "ReactiveMoya", targets: ["ReactiveMoya"]),
         .library(name: "RxMoya", type: .dynamic, targets: ["RxMoya"])
     ],
     dependencies: [
-        .package(url: "https://github.com/Alamofire/Alamofire.git", .exact("5.0.0-rc.1")),
+        .package(url: "https://github.com/sideround/Alamofire.git", .branch("5.0.0-rc.1.spm.dynamic")),
         .package(url: "https://github.com/ReactiveCocoa/ReactiveSwift.git", from: ("6.0.0")),
         .package(url: "https://github.com/ReactiveX/RxSwift.git", .branch("5.1.0-spm-dynamic")),
         .package(url: "https://github.com/Quick/Quick.git", from: "2.0.0"),
